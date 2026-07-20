@@ -1,0 +1,35 @@
+# PharmaBot bağımlılıkları — Python 3.10
+# Öğrenme-dostu yaklaşım: her parçada ihtiyaç doğunca AÇ (uncomment) + pip install.
+# Böylece her paketin neden burada olduğunu bilirsin.
+
+# --- P0/P2: temel ---
+python-dotenv        # .env okuma
+pymupdf              # P2: PDF metin çıkarma (import adı: fitz)
+
+# --- P3: chunking ---
+langchain-text-splitters
+
+# --- P4: embedding + vektör DB ---
+# sentence-transformers   # BAAI/bge-m3 modeli
+# chromadb
+
+# --- P5: Postgres ---
+# sqlalchemy
+# psycopg[binary]
+
+# --- P6: isim çözümleme ---
+# rapidfuzz
+
+# --- P7/P8: retrieval + graf ---
+# langchain
+# langchain-community      # BM25Retriever, EnsembleRetriever
+# langgraph
+# rank-bm25
+
+# --- P11: backend API ---
+# fastapi
+# uvicorn[standard]
+# sse-starlette
+
+# --- P12: değerlendirme ---
+# ragas

@@ -1,0 +1,42 @@
+# --- Python ---
+venv/
+.venv/
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+
+# --- Sırlar / ortam ---
+.env
+.env.local
+
+# --- Kişisel öğrenme notları (repoya girmez, sadece Nuri'de) ---
+00_ILERLEME.md
+02_OGRENME_PLANI.md
+03_OGRENDIKLERIM.md
+
+# --- Veri & modeller (repoya girmez, çok büyük) ---
+# PDF verisi D:\titck_kubkt_data'da; .env'deki DATA_ROOT ile bağlanır.
+data/
+data_pipeline/output/
+*.db
+chroma/
+chroma_db/
+.cache/
+models/
+*.pt
+*.bin
+
+# --- Frontend (P11'de gelince) ---
+node_modules/
+frontend/dist/
+frontend/build/
+
+# --- Gecici goruntuleme dosyalari (pipeline'in parcasi degil) ---
+*_view.json
+
+# --- Editör / OS ---
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
